@@ -14,7 +14,7 @@ async function RecoverUserPassword({code , password}) {
     body : JSON.stringify({code : code , password : password})
   }
   
-  const resp = await fetch("http://localhost:777/users/password/recover",req)
+  const resp = await fetch("https://appi.samasecentro.com/users/password/recover",req)
 
   if(!resp.ok) {
     console.log(resp)
