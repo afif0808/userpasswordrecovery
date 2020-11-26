@@ -97,11 +97,14 @@ function App() {
     <div>
       <div className={"col-12"}>
         <div className={"col-lg-6"} style={{margin : "20px auto",border : "solid 1px #ccc",padding:20}}>
-            <center><h1>Atur ulang kata sandi</h1></center>
+            <center><h3>Atur ulang kata sandi</h3></center>
             <form onSubmit={onSubmit}>
               <table className={"table"}>
                 <tr>
                   <td>Kata sandi</td>
+                </tr>
+
+                <tr>
                   <td>
                     <input 
                       onChange={(e)=>{
@@ -112,8 +115,13 @@ function App() {
                       className={"form-control"} />
                   </td>
                 </tr>
+                
                 <tr>
-                  <td>Masukkan ulang kata sandi</td>
+                      <td>Masukkan ulang kata sandi</td>
+                </tr>
+
+
+                <tr>
                   <td>
                     <input
                       onChange={(e)=>{
@@ -131,6 +139,7 @@ function App() {
                       className={"form-control"} />
                   </td>
                 </tr>
+
                 <tr>
                   <td colSpan={2}>
                     <button className={"btn btn-primary"}>SIMPAN</button>
